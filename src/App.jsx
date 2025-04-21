@@ -3,7 +3,6 @@ import { useDebounce } from 'react-use'
 import Search from './components/Search'
 import TrendingMoviesSlider from './components/TrendingMoviesSlider'
 import MovieSection from './components/MovieSection'
-import TrendingSection from './components/TrendingSection'
 import { fetchMovies } from './services/movieService'
 
 const App = () => {
@@ -42,7 +41,6 @@ const App = () => {
         </header>
 
         <TrendingMoviesSlider />
-        <TrendingSection />
         <MovieSection 
           movies={movieList}
           isLoading={isLoading}
